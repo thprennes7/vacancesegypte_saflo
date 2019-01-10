@@ -5,7 +5,7 @@ explications :
 		On demande le nom de la personne et on lui retourne un boujour en y ajoutant la variable de son nom
 
 	-01 :
-		On demande un nombre à l'utilisateur, on réalise une pyramide avec le nombre d'étages demandés du lus petit au plus grand, puis du plus grand au plus petit ( en partant du plus grand -1 )
+		On demande un nombre à l'utilisateur, on vérifie via un modulo si on a bien un nombre impair ensuite on réalise une pyramide avec le nombre d'étages demandés du plus petit au plus grand, puis du plus grand au plus petit ( en partant du plus grand -1 )
 
 	-02 :
 		On demande à l'utilisateur de définir un mot de passe que l'on stock das une variable
