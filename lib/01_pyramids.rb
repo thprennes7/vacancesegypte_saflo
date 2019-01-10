@@ -1,7 +1,7 @@
 def ask_stages
-	puts "Entres un nombre entre 1 et 25 :"
+	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)"
 	print "> "
-	stage_nr = gets.chomp.to_i
+	stage_nbr = gets.chomp.to_i
 end
 
 def full_pyramid (stage_nbr)
@@ -20,8 +20,25 @@ def full_pyramid (stage_nbr)
 	end
 end
 
+def wtf_pyramid (stage_nbr)
+	x = stage_nbr
+	stage_nbr.times do
+		x -= 1
+		stage_str = String.new
+		(stage_nbr - x).times do
+			stage_str = stage_str + " "
+		end
+		(x*2-1).times do
+			stage_str = stage_str + "#"
+		end
+		puts stage_str
+	end
+end
+
 def perform
-	full_pyramid(ask_stages)
+	stage_nbr = ask_stages
+	full_pyramid(stage_nbr)
+	wtf_pyramid(stage_nbr)
 end
 
 perform
