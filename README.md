@@ -11,7 +11,7 @@ explications :
 		On demande à l'utilisateur de définir un mot de passe que l'on stock das une variable
 		Ensuite on lui invite à saisir le mot de passe, tant que ça saisie ne correspond pas à la variable stockée, l'utilisateur reste bloqué dans la boucle
 
-	-3 :
+	-03 :
 		On présente le jeu à l'utilisateur puis :
 			on attend qu'il appuie sur entré pour lancer le dé
 			suivant le résultat on avance, on recule ou on fait rien
