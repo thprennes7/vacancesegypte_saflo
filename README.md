@@ -1,5 +1,6 @@
 Dossier pour le projet d'intro au ruby par Salomé et Florian
 explications : 
+
 	-00 :
 		On demande le nom de la personne et on lui retourne un boujour en y ajoutant la variable de son nom
 
