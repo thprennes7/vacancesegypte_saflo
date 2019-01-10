@@ -37,8 +37,13 @@ end
 
 def perform
 	stage_nbr = ask_stages
-	full_pyramid(stage_nbr)
-	wtf_pyramid(stage_nbr)
+	case (stage_nbr % 2)
+	when 0
+		puts "Loupé, je t'ai demandé un nombre impair ! Renégat !"
+	else
+		full_pyramid(stage_nbr)
+		wtf_pyramid(stage_nbr)
+	end
 end
 
 perform
