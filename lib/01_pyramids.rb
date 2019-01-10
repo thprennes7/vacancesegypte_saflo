@@ -1,17 +1,27 @@
-puts "Entres un nombre entre 1 et 25 : "
-print "> "
-stage_nbr = gets.chomp
-puts "Voici la pyramide : "
-x = 0
-stage_nbr = stage_nbr.to_i
-while x < stage_nbr
-	stage_str = String.new
-	x += 1
-	(stage_nbr - x).times do
-		stage_str = stage_str + " "
-	end
-	x.times do
-		stage_str = stage_str + "#"
-	end
-	puts stage_str
+def ask_stages
+	puts "Entres un nombre entre 1 et 25 :"
+	print "> "
+	stage_nr = gets.chomp.to_i
 end
+
+def full_pyramid (stage_nbr)
+	puts "Voici la pyramide :"
+	x = 0
+	stage_nbr.times do
+		x += 1
+		stage_str = String.new
+		(stage_nbr - x).times do
+			stage_str = stage_str + " "
+		end
+		(x*2-1).times do
+			stage_str = stage_str + "#"
+		end
+		puts stage_str
+	end
+end
+
+def perform
+	full_pyramid(ask_stages)
+end
+
+perform
