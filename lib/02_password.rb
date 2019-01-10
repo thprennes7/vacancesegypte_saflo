@@ -1,5 +1,5 @@
 def signup
-	puts " Bonjour, veuillez enregistrer votre mot de passe : "
+	puts "Bonjour, veuillez enregistrer votre mot de passe : "
 	mdp = gets.chomp
 end
 
@@ -15,11 +15,15 @@ def login (mdp_default)
 	end
 end
 
+def welcome_screen
+	puts "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+end
+
 def perform
 	mdp_default = signup
 	while login(mdp_default) != 1
 	end
-	puts "Bienvenue dans la matrice"
+	welcome_screen
 end
 
 perform
